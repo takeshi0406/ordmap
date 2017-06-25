@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ordmap',
-    description="Visualise your task Loasmap as Hasse Diagram.,
+    description='Visualise your task Loasmap as Hasse Diagram.',
     version='0.0.1',
     license='MIT',
     classifiers=[
