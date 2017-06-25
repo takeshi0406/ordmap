@@ -16,7 +16,7 @@ setup(
         'console_scripts': [
             'ordmap = ordmap.cli:main'
         ]
-    ],
+    },
     author='takeshi0406',
     author_email='sci.and.eng@gmail.com',
     url='https://github.com/takeshi0406/ordmap',
