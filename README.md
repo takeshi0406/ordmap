@@ -7,7 +7,7 @@ Visualise your task loadmap as Hasse Diagram.
 Install from Github.
 
 ```bash
-pip install git+https://github.com/takeshi0406/ordmap
+pip install --upgrade git+https://github.com/takeshi0406/ordmap
 ```
 
 ## Usage
