@@ -2,7 +2,7 @@ import click
 import networkx as nx
 from matplotlib import pyplot as plt
 
-from ordmap import ordmap
+from . import ordmap
 
 @click.command(help='save')
 @click.argument('config', type=str, required=True)
