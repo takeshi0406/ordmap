@@ -1,9 +1,5 @@
 from setuptools import setup, find_packages
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src')) # noqa
-
-import ordmap
-
 setup(
     name='pychatwork',
     description="Visualise your tasks as Hasse Diagram.,
@@ -19,7 +15,8 @@ setup(
     entry_points={
         'console_scripts': [
             'ordmap = ordmap.cli:main'
-    ]
+        ]
+    ],
     author='takeshi0406',
     author_email='sci.and.eng@gmail.com',
     url='https://github.com/takeshi0406/ordmap',
