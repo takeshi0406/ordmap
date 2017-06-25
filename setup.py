@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pychatwork',
-    description="Visualise your tasks as Hasse Diagram.,
+    name='ordmap',
+    description="Visualise your task Loasmap as Hasse Diagram.,
     version='0.0.1',
     license='MIT',
     classifiers=[
@@ -20,6 +20,6 @@ setup(
     author='takeshi0406',
     author_email='sci.and.eng@gmail.com',
     url='https://github.com/takeshi0406/ordmap',
-    install_requires=['networkx', 'matplotlib', 'yaml'],
+    install_requires=['networkx', 'matplotlib', 'pyyaml'],
     test_suite='tests',
 )
