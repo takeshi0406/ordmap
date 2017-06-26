@@ -51,6 +51,8 @@ ordmap tasks.yml tasks.png
 ordmap tasks.yml tasks.net --save_as pajek
 ```
 
+![tasks.png](https://raw.github.com/wiki/takeshi0406/ordmap/images/tasks.png)
+
 eg. pajek format
 
 ```
