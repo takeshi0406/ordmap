@@ -1,8 +1,7 @@
 import click
 import networkx as nx
-from matplotlib import pyplot as plt
 
-import ordmap
+from . import ordmap
 
 @click.command(help='save')
 @click.argument('config', type=str, required=True)
@@ -23,9 +22,8 @@ def _export(G: nx.DiGraph, filepath: str, save_as: str):
 
     """
     if save_as == 'image':
-        pos = nx.spectral_layout(G)
-        nx.draw(G, pos, with_labels=True, node_shape='o')
-        plt.savefig(filepath)
+        g = nx.nx_agraph.to_agraph(G)
+        g.draw(filepath, prog='dot')
     else:
         write_method = getattr(nx, 'write_{}'.format(save_as))
         write_method(G, filepath)

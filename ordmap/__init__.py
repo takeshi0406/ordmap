@@ -1,1 +1,1 @@
-from ordmap import read_tasks
+from .ordmap import read_tasks

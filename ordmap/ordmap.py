@@ -2,7 +2,6 @@ import yaml
 from typing import List
 
 import networkx as nx
-from matplotlib import pyplot as plt
 
 
 def read_tasks(filepath: str) -> nx.DiGraph:
@@ -51,7 +50,7 @@ def _create_dag(tasks: List[Task]) -> nx.DiGraph:
     G = nx.DiGraph()
     for task in tasks:
         for dep in task.dependents:
-            G.add_edge(task.name, dep)
+            G.add_edge(dep, task.name)
     assert nx.is_directed_acyclic_graph(G)
     return _transitive_reduction(G)
 
