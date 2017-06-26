@@ -51,33 +51,8 @@ ordmap tasks.yml tasks.png
 ordmap tasks.yml tasks.net --save_as pajek
 ```
 
-<<<<<<< HEAD
-![tasks.png](https://raw.github.com/wiki/takeshi0406/ordmap/images/tasks.png)
-=======
 ![tasks.png](https://raw.githubusercontent.com/takeshi0406/ordmap/master/images/tasks.png)
->>>>>>> master
 
-eg. pajek format
-
-```
-*vertices 8
-1 "write product code" 0.0 0.0 ellipse
-2 "fix design" 0.0 0.0 ellipse
-3 "choose programing language" 0.0 0.0 ellipse
-4 "request for budget(ringi)" 0.0 0.0 ellipse
-5 "make a mock-up" 0.0 0.0 ellipse
-6 releace 0.0 0.0 ellipse
-7 "code review" 0.0 0.0 ellipse
-8 "choose programming language" 0.0 0.0 ellipse
-*arcs
-1 2 1.0
-1 3 1.0
-1 4 1.0
-1 5 1.0
-5 8 1.0
-6 1 1.0
-6 7 1.0
-```
 
 ## TODO
 
