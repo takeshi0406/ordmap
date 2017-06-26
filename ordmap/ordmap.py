@@ -2,7 +2,6 @@ import yaml
 from typing import List
 
 import networkx as nx
-from matplotlib import pyplot as plt
 
 
 def read_tasks(filepath: str) -> nx.DiGraph:
