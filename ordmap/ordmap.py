@@ -20,8 +20,8 @@ def read_tasks(filepath: str) -> nx.DiGraph:
 class Task(object):
     """Task type"""
     def __init__(self, config: dict):
-        self.name: str = config['name']
-        self.dependents: list = config.get('deps', [])
+        self.name = config['name']
+        self.dependents = config.get('deps', [])
 
 
 def _read_yaml(filepath: str) -> List[Task]:
